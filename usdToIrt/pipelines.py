@@ -18,9 +18,9 @@ class UsdtoirtPipeline(object):
 
         self.conn = psycopg2.connect(
             host="localhost",
-            database="kilidTest",
+            database="", #your database name
             user="postgres",
-            password="2050954530")
+            password="") # your database password
 
         self.cure = self.conn.cursor()
 
