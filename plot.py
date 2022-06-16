@@ -17,9 +17,9 @@ class Plot(object):
 
         self.conn = psycopg2.connect(
             host="localhost",
-            database="kilidTest",
+            database="", #your database name
             user="postgres",
-            password="2050954530")
+            password="") #your database password
 
         #Setting auto commit false
         self.conn.autocommit = True
